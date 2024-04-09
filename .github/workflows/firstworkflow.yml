@@ -1,0 +1,14 @@
+name: First-workflow
+on: workflow_dispatch
+jobs: 
+  firstjob:
+    name: Bash script run
+    runs-on: ubuntu-latest
+    steps:
+       - name: print cmd
+         run: echo "hello"
+       - name: print cmd
+         run: |
+             echo "hello everyone"
+             echo "I am manoj kumar"
+       
