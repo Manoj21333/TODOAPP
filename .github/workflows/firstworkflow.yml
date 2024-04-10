@@ -9,11 +9,12 @@ jobs:
          run: echo "hello"
        - name: print cmd
          run: |
-             set -x 
              pwd
              ls
-             echo "hello everyone"
-             echo "I am manoj kumar"
+             cd TODOAPP
+             ls
+             pwd
+            
        - name: setup node version
          uses: actions/setup-node@v4
          with:
