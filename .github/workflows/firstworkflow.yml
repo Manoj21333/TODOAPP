@@ -9,6 +9,9 @@ jobs:
          run: echo "hello"
        - name: print cmd
          run: |
+             set -x 
+             pwd
+             ls
              echo "hello everyone"
              echo "I am manoj kumar"
        - name: setup node version
