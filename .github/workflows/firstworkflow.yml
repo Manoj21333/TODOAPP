@@ -1,5 +1,8 @@
 name: First-workflow
-on: workflow_dispatch
+on:
+  push:
+    branches:
+    - main
 jobs: 
   firstjob:
     name: Bash script run
