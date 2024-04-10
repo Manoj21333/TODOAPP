@@ -8,15 +8,15 @@ jobs:
     name: Bash script run
     runs-on: ubuntu-latest
     steps:
+       - name: Checkout
+         uses: actions/checkout@v4.1.2
+         
        - name: print cmd
          run: echo "hello"
        - name: print cmd
          run: |
              pwd
              ls
-             cd ..
-             ls
-             pwd
             
        - name: setup node version
          uses: actions/setup-node@v4
